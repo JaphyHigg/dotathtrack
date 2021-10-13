@@ -1,0 +1,159 @@
+body {
+    max-width: 1000px;
+    min-width: 800px;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    /* border: 4px double black; */
+    background-color: #393a3b;
+    font-family: monospace, sans-serif;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "usd eur jpy"
+    "gbp aud cad"
+    "chf cny hkd"
+    "nzd sek krw"
+    "sgd nok mxn"
+    "inr rub zar"
+    "try brl twd";
+    grid-gap: 0.2rem;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: black
+    ;
+  }
+  
+  h1 {
+    background-color: #000000;
+    color: white;
+    /* margin: 20px; */
+  }
+  .banner {
+    /* max-width: 200px; */
+    max-height: 30px;
+        margin-top: 10px;
+  }
+  .currency {
+    border: 3px solid #E6007A;
+    padding: 10px;
+    text-align: center;
+    color: #8CC4B8;
+    background-color: #515a58;
+    min-width: 100px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    font-size: larger;
+  }
+  .change {
+    animation-duration: 2s;
+    animation-name: fadediv;
+  }
+  #placeholder {
+    grid-area: ph;
+  }
+  #usd {
+    grid-area: usd;
+  }
+  /* #btcusd.change {
+      animation-duration: 2s;
+      animation-name: fadediv;
+  } */
+  #eur {
+    grid-area: eur;
+  }
+  #jpy {
+    grid-area: jpy;
+  }
+  #gbp {
+    grid-area: gbp;
+  }
+  #aud {
+    grid-area: aud;
+  }
+  #cad {
+    grid-area: cad;
+  }
+  #chf {
+    grid-area: chf;
+  }
+  #cny {
+    grid-area: cny;
+  }
+  #hkd {
+    grid-area: hkd;
+  }
+  #nzd {
+    grid-area: nzd;
+  }
+  #sek {
+    grid-area: sek;
+  }
+  #krw {
+    grid-area: krw;
+  }
+  #sgd {
+    grid-area: sgd;
+  }
+  #nok {
+    grid-area: nok;
+  }
+  #mxn {
+    grid-area: mxn;
+  }
+  #inr {
+    grid-area: inr;
+  }
+  #rub {
+    grid-area: rub;
+  }
+  #zar {
+    grid-area: zar;
+  }
+  #try {
+    grid-area: try;
+  }
+  #brl {
+    grid-area: brl;
+  }
+  #twd {
+    grid-area: twd;
+  }
+  #header {
+    grid-area: header;
+    text-align: center;
+    border: 3px solid #E6007A;
+  }
+  .yes {
+    background-color: #86a858f5;
+    font-weight: bold;
+  }
+  .no {
+    background-color: #515a58;
+    color: white;
+    font-weight: bold;
+  }
+  .ath {
+    font-size: large;
+    color: #8CC4B8
+  }
+  .price {
+    font-size: larger;
+    font-weight: bold;
+    color: #ffffff
+  }
+  .percent {
+    font-size: large;
+    font-weight: bold;
+    color: black;
+  }
+  @keyframes fadediv {
+    from {background-color: #E6007A;}
+    to {background-color: #515a58;}
+  }
